@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  min-width: 170px;
+  background-color: white;
+  padding-top: 20px;
+  border: 1px solid lightslategray;
+  border-radius: 0px 50px 50px 0px;
+}
+.menu-logo img {
+  width: 100%;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+.navs span {
+  padding: 0px 25px 50px 20px;
+  cursor: pointer;
+}
+.nav-option {
+  display: flex;
+  color: #666666;
+  height: 10vh;
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 25px 40px 0px 0px;
+}
+.nav-option:hover {
+  background-color: #f8e8eb;
+  color: #be113c;
+  transition: 1.5ms ease-in-out;
+}
+.quiz-card img {
+  cursor: pointer;
+}
+.log-out img {
+  padding: 50px 30px 10px 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-logo img {
+    width: 120px;
+  }
+  .movies {
+    padding: 30px 30px 0px 30px;
+  }
+  .top-rated img {
+    width: 500px;
+    padding: 20px 0px 0px 20px;
+  }
+  .bottom-right img {
+    width: 320px;
+    padding: 10px 0px;
+  }
+  .quiz-card img {
+    width: 120px;
+  }
+}

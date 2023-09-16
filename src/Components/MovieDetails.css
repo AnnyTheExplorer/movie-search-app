@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+}
+.movies {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.top-trailer {
+  width: 100%;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+}
+.bottom-left {
+  width: 70%;
+}
+.trailer-info {
+  color: #333333;
+  padding: 20px 10px 10px 0px;
+  font-weight: 500;
+}
+.trailer-info span {
+  padding: 0px 10px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #404040;
+}
+.trailer-info .button {
+  border: 1px solid #f9ecee;
+  border-radius: 20px;
+  padding: 3px 14px;
+  margin-left: 10px;
+  color: #ba1c1b;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.trailer-info p {
+  width: 90%;
+  font-size: 18.5px;
+  padding: 30px 0px 0px 10px;
+}
+.casts {
+  padding-bottom: 10px;
+}
+.casts .cast-name {
+  color: #bf123d;
+  padding: 0px 10px;
+  font-weight: 500;
+}
+.top-rated img {
+  width: 650px;
+  cursor: pointer;
+  padding: 20px 0px 0px 10px;
+}
+.bottom-right img {
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .movies {
+    width: 80%;
+  }
+  .top-trailer {
+    width: 100%;
+  }
+  .bottom-left {
+    width: 80%;
+  }
+  .trailer-info {
+    padding: 10px 10px 10px 0px;
+  }
+  .trailer-info span {
+    padding: 0px 10px;
+    font-size: 12.5px;
+  }
+  .trailer-info p {
+    width: 80%;
+    font-size: 18px;
+    padding: 20px 0px 0px 10px;
+  }
+  .top-rated img {
+    width: 100%;
+    padding: 10px 0px 0px 10px;
+  }
+  .bottom-right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies {
+  padding: 10px;
+}
+  .bottom-left {
+    width: 100%;
+  }
+  .trailer-info {
+    padding: 5px 10px 10px 0px;
+  }
+  .trailer-info span {
+    padding: 0px 5px;
+    font-size: 10px;
+  }
+  .trailer-info .button {
+    display: none;
+  }
+  .trailer-info p {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0px 0px 10px;
+  }
+  .top-rated img {
+    width: 100%;
+  }
+  .bottom-right img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+.hero-section::-webkit-scrollbar {
+  display: none;
+}
+.hero-section {
+  background-image: url(../Assets/Images/hero-img.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero-section .nav-bar {
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+.movie-desc {
+  padding: 90px 0px 100px 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-section .nav-bar {
+    width: 100%;
+  }
+  .movie-desc {
+    padding: 50px 20px;
+    width: 300px;
+  }
+}
+
