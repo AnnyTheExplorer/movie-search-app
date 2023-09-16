@@ -6,14 +6,12 @@ import "./MovieDetails.css";
 import TopTrailer from "../Assets/Images/TopTrailer.png";
 import StarOptions from "../Assets/Images/StarOptions.png";
 import RightCard from "../Assets/Images/RightCard.png";
-import TopRated from "../Assets/Images/TopRated.png";
 
 const MovieDetailsPage = () => {
   const { id } = useParams();
   const [movieDetails, setMovieDetails] = useState({});
 
   useEffect(() => {
-  
     axios
       .get(`https://api.themoviedb.org/3/movie/${id}`, {
         params: {
@@ -33,45 +31,19 @@ const MovieDetailsPage = () => {
       <Menu />
       <div className="movies">
         <div className="top">
-          <img src={TopTrailer} alt="" className="top-trailer" />
+          <img src={TopTrailer} alt="" className="trailer" />
         </div>
         <div className="bottom">
           <div className="bottom-left">
             <div className="trailer-info">
-              <div className="info-nav">
-                <span>Top Gun: Maverick</span>
-                <span>2022</span>
-                <span>PG-13</span>
-                <span>2h 10m</span>
-                <span className="button">Action</span>
-                <span className="button">Drama</span>
-              </div>
-              <p>
-                After thirty years, Maverick is still pushing the envelope as a
-                top naval aviator, but must confront ghosts of his past when he
-                leads TOP GUN's elite graduates on a mission that demands the
-                ultimate sacrifices from those chosen to fly it.
+              <h1 data-testid="movie-title">{movieDetails.title}</h1>
+              <p data-testid="movie-release-date">
+                Release Date (UTC): {movieDetails.release_date}
               </p>
-              <div className="casts">
-                <p>
-                  Director:<span className="cast-name">Joseph Kosinski</span>
-                </p>
-                <p>
-                  Writers:
-                  <span className="cast-name">
-                    Jim Cash, Jack Epps Jr, Peter Craig
-                  </span>
-                </p>
-                <p>
-                  Stars:
-                  <span className="cast-name">
-                    Tom Cruise, Jennifer Connelly, Miles Teller
-                  </span>
-                </p>
-              </div>
-              <div className="top-rated">
-                <img src={TopRated} alt="" />
-              </div>
+              <p data-testid="movie-runtime">
+                Runtime (minutes): {movieDetails.runtime}
+              </p>
+              <p data-testid="movie-overview">{movieDetails.overview}</p>
             </div>
           </div>
           <div className="bottom-right">
